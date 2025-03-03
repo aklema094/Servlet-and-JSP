@@ -13,6 +13,10 @@
         <servlet-name>secondServlet</servlet-name>
         <servlet-class> com.servletss.SecondServlet </servlet-class>
     </servlet>
+     <servlet>
+        <servlet-name>third</servlet-name>
+        <servlet-class> com.servletss.ThirdServlet </servlet-class>
+    </servlet>
     
     // servlet mapping..
     <servlet-mapping>
@@ -23,6 +27,11 @@
      <servlet-mapping>
           <servlet-name>secondServlet</servlet-name>
           <url-pattern>/second</url-pattern>
+          
+    </servlet-mapping>
+    <servlet-mapping>
+          <servlet-name>third</servlet-name>
+          <url-pattern>/third</url-pattern>
           
     </servlet-mapping>
    
