@@ -1,39 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
-	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	 xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
-	 version="6.0">
-// servlet declaration
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <!-- Welcome file configuration -->
+    <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlet declarations -->
     <servlet>
         <servlet-name>firstServlet</servlet-name>
-        <servlet-class> com.servletss.Myservlet </servlet-class>
+        <servlet-class>com.servletss.Myservlet</servlet-class>
     </servlet>
+
     <servlet>
         <servlet-name>secondServlet</servlet-name>
-        <servlet-class> com.servletss.SecondServlet </servlet-class>
+        <servlet-class>com.servletss.SecondServlet</servlet-class>
     </servlet>
-     <servlet>
+
+    <servlet>
         <servlet-name>third</servlet-name>
-        <servlet-class> com.servletss.ThirdServlet </servlet-class>
+        <servlet-class>com.servletss.ThirdServlet</servlet-class>
     </servlet>
-    
-    // servlet mapping..
+
+    <!-- Servlet mappings -->
     <servlet-mapping>
-          <servlet-name>firstServlet</servlet-name>
-          <url-pattern>/web</url-pattern>
-          
+        <servlet-name>firstServlet</servlet-name>
+        <url-pattern>/web</url-pattern>
     </servlet-mapping>
-     <servlet-mapping>
-          <servlet-name>secondServlet</servlet-name>
-          <url-pattern>/second</url-pattern>
-          
-    </servlet-mapping>
+
     <servlet-mapping>
-          <servlet-name>third</servlet-name>
-          <url-pattern>/third</url-pattern>
-          
+        <servlet-name>secondServlet</servlet-name>
+        <url-pattern>/second</url-pattern>
     </servlet-mapping>
-   
-    
+
+    <servlet-mapping>
+        <servlet-name>third</servlet-name>
+        <url-pattern>/third</url-pattern>
+    </servlet-mapping>
+
 </web-app>
