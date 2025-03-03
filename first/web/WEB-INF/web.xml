@@ -9,6 +9,10 @@
         <servlet-name>firstServlet</servlet-name>
         <servlet-class> com.servletss.Myservlet </servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>secondServlet</servlet-name>
+        <servlet-class> com.servletss.SecondServlet </servlet-class>
+    </servlet>
     
     // servlet mapping..
     <servlet-mapping>
@@ -16,5 +20,11 @@
           <url-pattern>/web</url-pattern>
           
     </servlet-mapping>
+     <servlet-mapping>
+          <servlet-name>secondServlet</servlet-name>
+          <url-pattern>/second</url-pattern>
+          
+    </servlet-mapping>
+   
     
 </web-app>
